@@ -1,0 +1,37 @@
+.welcome .header {
+    height: auto !important;
+}
+
+.welcome-tabs.welcome-card.welcome-card--blue {
+    width: 90% !important;
+    border-radius: 0 !important;
+    margin-left: 5% !important;
+    max-width: none;
+}
+
+.welcome .header .header-container {
+    width: 100% !important;
+    height: 300px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.header-text-title, .header-text-subtitle {
+    display: none !important;
+}
+.welcome .welcome-footer-centered {
+    display: none !important;
+}
+
+.welcome {
+    background-color: #251b2d !important;
+}
+
+.welcome .header .header-watermark-container {
+    top: 0;
+}
+
+.header {
+    background: none !important;
+}
+
