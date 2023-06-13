@@ -185,10 +185,12 @@ class StatelessDialog extends Component<IProps> {
                 onClose = { this._onDialogDismissed }
                 onDialogDismissed = { this._onDialogDismissed }
                 shouldCloseOnEscapePress = { true }
-                width = { width || 'medium' }>
+                width = { width || 'medium' }
+            >
                 <div
                     onKeyPress = { this._onKeyPress }
-                    ref = { this._onDialogRef }>
+                    ref = { this._onDialogRef }
+                >
                     <form
                         className = 'modal-dialog-form'
                         id = 'modal-dialog-form'
@@ -328,7 +330,7 @@ class StatelessDialog extends Component<IProps> {
                 disabled = { this.props.okDisabled }
                 id = { OK_BUTTON_ID }
                 key = { OK_BUTTON_ID }
-                label = { t(this.props.okKey || 'dialog.Ok') }
+                label = { t(this.props.okKey || 'dialog.save') }
                 onClick = { this._onSubmit }
                 size = 'small' />
         );

@@ -90,6 +90,7 @@ const styles = (theme: Theme) => {
         settingsDialog: {
             display: 'flex',
             width: '100%',
+            background: '#232631',
 
             '&.profile-pane': {
                 flexDirection: 'column'

@@ -319,7 +319,7 @@ const defaultStyles = (theme: Theme) => {
             height: '100%',
             width: '100%',
             borderRadius: '4px',
-            backgroundColor: theme.palette.ui02
+            backgroundColor: '#232631',
         },
 
         borderIndicator: {
@@ -1035,7 +1035,7 @@ class Thumbnail extends Component<IProps, IState> {
                         onMouseLeave: this._onMouseLeave
                     }
                 ) }
-                style = { styles.thumbnail }>
+                style = {{ ...styles.thumbnail, borderRadius: '20px' }}>
                 {!_gifSrc && (local
                     ? <span id = 'localVideoWrapper'>{video}</span>
                     : video)}

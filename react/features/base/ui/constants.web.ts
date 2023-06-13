@@ -263,19 +263,29 @@ export const commonStyles = (theme: Theme) => {
         },
 
         '.toolbox-content-items': {
-            background: theme.palette.ui01,
+            background: 'none',
             borderRadius: 6,
             margin: '0 auto',
             padding: 6,
             textAlign: 'center' as const,
             pointerEvents: 'all' as const,
-            boxShadow: '0px 2px 8px 4px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px rgba(0, 0, 0, 0.15)',
 
             '& > div': {
                 marginRight: theme.spacing(2),
+                background: '#2B333E',
+                borderRadius: '50%',
 
                 '&:last-of-type': {
                     marginRight: 0
+                },
+
+                '&:hover': {
+                    borderRadius: '50% !important',
+                    background: '#7B57C8 !important',
+                },
+
+                '& .toolbox-icon': {
+                    background: 'none !important',
                 }
             }
         }
@@ -293,9 +303,11 @@ export const getGlobalStyles = (theme: Theme) => {
         // @atlaskit/modal-dialog OVERRIDES
         '.atlaskit-portal div[role=dialog]': {
             // override dialog background
+            borderRadius: "20px",
             '& > div': {
-                background: theme.palette.ui02,
-                color: theme.palette.text01
+                background: '#232631',
+                color: theme.palette.text01,
+                borderRadius: "20px",
             }
         }
     };
