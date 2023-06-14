@@ -3,6 +3,65 @@ body.welcome-page {
     overflow: auto;
 }
 
+.main {
+    display: flex;
+    align-items: start;
+    height: calc(100% - 75px);
+    width: 60%;
+    justify-content: center;
+
+    &-conference-create {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 700px;
+        background: #232631;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 72px;
+
+        &-wrapper {
+            width: 61%;
+
+            &-actions {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.main-aside {
+    width: 40%;
+    height: calc(100% - 75px);
+    background: #232631;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: #232631;
+    border-bottom: 1px solid #0E1621;
+    padding: 0 20px;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header-info {
+        margin: 0 16px;
+
+        &-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
+
 .welcome {
     background-image: $welcomePageBackground;
     background-color: #fff;
@@ -316,5 +375,34 @@ body.welcome-page {
     .welcome-footer-row-1-text {
         max-width: 200px;
         margin-right: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .main {
+        width: 100%;
+        height: auto;
+    }
+    .main-aside {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-header-info {
+        display: none !important;
+    }
+
+    .main-conference-create {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 16px;
+
+        &-wrapper {
+            width: 100%;
+
+            &-actions {
+                margin-top: 16px;
+            }
+        }
     }
 }

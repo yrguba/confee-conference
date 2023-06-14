@@ -120,7 +120,6 @@ ReducerRegistry.register<ISettingsState>(STORE_NAME, (state = DEFAULT_STATE, act
         return _initSettings(state);
 
     case SETTINGS_UPDATED:
-        console.log("UPDATE SETTINGS")
         const currentSettingsJSON: string | null = window.localStorage.getItem('features/base/user');
         let currentSettings: any = {};
         if (currentSettingsJSON) {
